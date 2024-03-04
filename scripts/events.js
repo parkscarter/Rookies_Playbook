@@ -33,13 +33,21 @@ fetch(apiUrl)
   function generateCards(arrayOfObjects) {
     const cardsContainer = document.getElementById('basketballContainer');
     arrayOfObjects.forEach(event => {
-      const team1 = event.away_team;
-      const team2 = event.home_team;
+      const awayTeam = event.away_team;
+      const homeTeam = event.home_team;
+      var spread_away;
+      var spread_home;
 
       //TODO The odds arent always matched to the correct team
-      const spread_away = event.bookmakers[0].markets[0].outcomes[0].point;
-      const spread_home = event.bookmakers[0].markets[0].outcomes[1].point;
-
+      if (event.bookmakers[0].markets[0].outcomes[0].name == awayTeam){
+        spread_away = event.bookmakers[0].markets[0].outcomes[0].point;
+        spread_home = event.bookmakers[0].markets[0].outcomes[1].point;
+      }
+      else{
+        spread_away = event.bookmakers[0].markets[0].outcomes[1].point;
+        spread_home = event.bookmakers[0].markets[0].outcomes[0].point;
+      }
+      
       const ul = document.createElement('ul');
       ul.classList.add('list-unstyled');
 
@@ -48,11 +56,11 @@ fetch(apiUrl)
       const liTeam2 = document.createElement('li'); 
 
       const t1 = document.createElement('p');
-      t1.textContent = team1 + " " + spread_away;
+      t1.textContent = awayTeam + " " + spread_away;
       t1.classList.add('custom-text-color');
 
       const t2 = document.createElement('p');
-      t2.textContent = team2 + " " + spread_home;
+      t2.textContent = homeTeam + " " + spread_home;
       t2.classList.add('custom-text-color');
 
       liTeam1.appendChild(t1);
