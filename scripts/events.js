@@ -38,7 +38,6 @@ fetch(apiUrl)
       var spread_away;
       var spread_home;
 
-      //TODO The odds arent always matched to the correct team
       if (event.bookmakers[0].markets[0].outcomes[0].name == awayTeam){
         spread_away = event.bookmakers[0].markets[0].outcomes[0].point;
         spread_home = event.bookmakers[0].markets[0].outcomes[1].point;
@@ -55,16 +54,29 @@ fetch(apiUrl)
       const liTeam1 = document.createElement('li');
       const liTeam2 = document.createElement('li'); 
 
+      liTeam1.classList.add('team-item');
+      liTeam2.classList.add('team-item');
+
       const t1 = document.createElement('p');
-      t1.textContent = awayTeam + " " + spread_away;
+      t1.textContent = awayTeam;
       t1.classList.add('custom-text-color');
 
+      const b1 = document.createElement('button');
+      b1.textContent = spread_away;
+      b1.classList.add('btn-primary')
+
       const t2 = document.createElement('p');
-      t2.textContent = homeTeam + " " + spread_home;
+      t2.textContent = homeTeam;
       t2.classList.add('custom-text-color');
 
+      const b2 = document.createElement('button');
+      b2.textContent = spread_home;
+      b2.classList.add('btn-primary')
+
       liTeam1.appendChild(t1);
+      liTeam1.appendChild(b1);
       liTeam2.appendChild(t2);
+      liTeam2.appendChild(b2);
 
       // Append list items to the unordered list
       ul.appendChild(liTeam1);
