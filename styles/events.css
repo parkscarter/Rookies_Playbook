@@ -27,8 +27,16 @@ body {
 }
 
 .card-header {
+    display: flex;
     background-color: #ff0000;
+    flex-direction: row;
+    justify-content: space-between;
     color: #ffffff;
+}
+
+.icon {
+    max-width: 50px;
+    border-radius: 10px;
 }
 
 .custom-text-color {
@@ -41,11 +49,14 @@ body {
 
 .team-item {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .btn-primary {
+    margin-left: 10vw;
+    margin-right: 10vw;
     border-radius: 5px;
     background-color: #ffffff;
     color: #0056b3;
@@ -56,6 +67,31 @@ body {
     background-color: #0056b3;
     color: #ffffff;
     border-color: #0056b3;
+}
+
+.colH {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    color: #333; 
+}
+
+.btn-soccer {
+    margin-right: 20vw;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #0056b3;
+    border-color: #007bff;
+}
+
+.btn-soccer:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    border-color: #0056b3;
+}
+
+.socH {
+    margin-right: 20vw;
+    color: #333; 
 }
 
 footer {
