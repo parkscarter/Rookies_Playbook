@@ -1,25 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="stylesheet" href="../styles/all.css" />
-    <link rel="stylesheet" href="../styles/about.css" />
-  </head>
-  <body>
-    <h1>Rookie's Playbook</h1>
-    <header data-bs-theme="dark">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-      </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rookie's Playbook</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1 class="display-4">Rookie's Playbook</h1>
     </header>
-  </body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <section>
+        <h2>About the Authors</h2>
+
+        <div class="author-container">
+            <div class="author">
+                <img src="./images/carter.jpeg" alt="Author 1" />
+                <p class="authorName">Carter Parks</p>
+                <p class="authorDesc">
+                    My name is Carter, and I'm a junior at Iowa State studying computer
+                    science. I've found great passion in software engineering, and I'm
+                    excited to become an expert in the field.
+                </p>
+            </div>
+
+            <div class="author">
+                <img src="./images/Jacob.jpg" alt="Author 2" />
+                <p class="authorName">Jacob Mashol</p>
+                <p class="authorDesc">Hello! My name is Jacob; I am a sophomore at Iowa State University.
+                    Studying Software Engineering So far, I enjoy Coms 319, and I am also
+                    looking forward to what this class has in store. </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>About the Class</h2>
+        <p class="classDesc">
+            Hello, this is the first group assignment as a part of Com S 319 at Iowa
+            State. Throughout the first few weeks of this class, we've learned basic
+            concepts relating to web development. We've learned how to place images
+            and text onto a page with HTML, and we've learned how to manipulate
+            those fields using css in order to achieve a desired style. Throughout
+            the remainder of the semester, I expect we will give our web pages some
+            life by including javascript functionality. After that, I assume we will
+            learn about backend and databases, which will likely include material
+            about frameworks like Node.js and react
+        </p>
+    </section>
+</body>
+
+
 </html>
