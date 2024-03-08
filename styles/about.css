@@ -2,12 +2,52 @@
 .classDesc {
     font-size: 18px;
     line-height: 1.6;
-    color: #ffffff;
+    color: #333;
 
     margin-bottom: 20px;
 
 }
 
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    color: #333;
+    text-align: center;
+  }
+
+  .author-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .author {
+    text-align: center;
+    max-width: 250px;
+    color: #333;
+  }
+
+  .author img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .classDesc {
+    margin: 10%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .date {
+    text-align: right;
+  }
 
 .author-container {
     display: flex;
@@ -15,10 +55,6 @@
     margin-bottom: 30px;
 }
 
-.author {
-    width: 45%;
-
-}
 
 .authorName {
     font-weight: bold;
