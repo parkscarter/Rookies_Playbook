@@ -8,13 +8,14 @@ function loadIcons(icons) {
     console.log(icons);
     for (let i = 0; i < icons.length; i++) {
         let title = icons[i].title;
-        let year = ""; // Year is not provided in the JSON
+        let desc = icons[i].desc;
         let url = icons[i].url;
         let division = document.createElement("div");
+        division.className = "icon-card";
         division.innerHTML = `
             <h3>${title}</h3>
-            <p>${year}</p>
-            <img src="${url}" />
+            <img src="${url}" class="icon-image"/>
+            <p>${desc}</p>
         `;
 
         mainContainer.appendChild(division);

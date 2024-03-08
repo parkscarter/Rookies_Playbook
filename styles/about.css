@@ -1,0 +1,40 @@
+.authorDesc,
+.classDesc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+
+    margin-bottom: 20px;
+
+}
+
+
+.author-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.author {
+    width: 45%;
+
+}
+
+.authorName {
+    font-weight: bold;
+    color: #ff0000;
+
+}
+
+
+@media (max-width: 768px) {
+    .author-container {
+        flex-direction: column;
+
+    }
+
+    .author {
+        width: 100%;
+
+    }
+}

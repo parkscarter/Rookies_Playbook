@@ -1,0 +1,20 @@
+#icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-card {
+    text-align: center;
+    margin: 20px;
+}
+
+.icon-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.icon-card p {
+    font-size: 10px;
+}

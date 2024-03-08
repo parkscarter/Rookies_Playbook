@@ -1,20 +1,22 @@
 {
-  "icons": [
-      {
-          "movieId": "1",
-          "title": "basketball",
-          "desc":"",
-          "url": "../images/BB_icon.png"
-      },
-      {
-          "movieId": "2",
-          "title": "mma",
-          "url": "../images/Boxing_icon.png"
-      },
-      {
-          "movieId": "3",
-          "title": "soccer",
-          "url": "../images/SB_icon.png"
-      }
-  ]
+    "icons": [
+        {
+            "movieId": "1",
+            "title": "basketball",
+            "desc": "Basketball is a dynamic sport combining athleticism and teamwork. ",
+            "url": "../images/BB_icon.png"
+        },
+        {
+            "movieId": "2",
+            "title": "mma",
+            "desc": " Mixed Martial Arts (MMA) is a combat sport encompassing various fighting disciplines ",
+            "url": "../images/Boxing_icon.png"
+        },
+        {
+            "movieId": "3",
+            "title": "soccer",
+            "desc": " Soccer, known as the beautiful game, is a globally beloved sport. ",
+            "url": "../images/SB_icon.png"
+        }
+    ]
 }
