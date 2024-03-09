@@ -1,4 +1,4 @@
-fetch("../data/data.json")
+fetch("./data.json")
     .then(response => response.json())
     .then(myIcons => loadIcons(myIcons.icons));
 
@@ -10,12 +10,14 @@ function loadIcons(icons) {
         let title = icons[i].title;
         let desc = icons[i].desc;
         let url = icons[i].url;
+        let bets = icons[i].bets;
         let division = document.createElement("div");
         division.className = "icon-card";
         division.innerHTML = `
             <h3>${title}</h3>
             <img src="${url}" class="icon-image"/>
-            <p>${desc}</p>
+            <p>Wagers available: ${bets}</p>
+            <p class="sport-desc">${desc}</p>
         `;
 
         mainContainer.appendChild(division);

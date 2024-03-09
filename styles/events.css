@@ -75,6 +75,11 @@ body {
     color: #333; 
 }
 
+.game-time {
+    margin-left: 5vw;
+    color: #333;
+}
+
 .btn-soccer {
     margin-right: 20vw;
     border-radius: 5px;

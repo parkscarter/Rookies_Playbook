@@ -1,0 +1,25 @@
+{
+    "icons": [
+        {
+            "movieId": "1",
+            "title": "Basketball",
+            "bets": "Spread and Moneyline",
+            "desc": "Basketball is a dynamic sport combining athleticism and teamwork. With its fast-paced action, intricate plays, and gravity-defying dunks, basketball mesmerizes spectators of all ages. The sport's global popularity continues to soar, fueled by iconic players, fierce rivalries, and unforgettable moments on the hardwood.",
+            "url": "../images/BB_icon.png"
+        },
+        {
+            "movieId": "2",
+            "title": "MMA",
+            "bets": "Moneyline",
+            "desc": "Mixed Martial Arts (MMA) is a combat sport that encompasses various fighting disciplines, including striking, grappling, and submission techniques. MMA bouts are characterized by their intensity, unpredictability, and sheer physicality, as competitors strive for victory through knockout, submission, or judges' decision.",
+            "url": "../images/Boxing_icon.png"
+        },
+        {
+            "movieId": "3",
+            "title": "Soccer",
+            "bets": "Moneyline",
+            "desc": "Soccer is a globally beloved sport characterized by its simplicity, elegance, and universal appeal. With its fast pace, fluid movements, and strategic gameplay, soccer unites fans across cultures and continents in shared excitement and passion.",
+            "url": "../images/SB_icon.png"
+        }
+    ]
+}

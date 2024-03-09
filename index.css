@@ -4,6 +4,14 @@
     justify-content: center;
 }
 
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
 .icon-card {
     text-align: center;
     margin: 20px;
@@ -16,5 +24,9 @@
 }
 
 .icon-card p {
-    font-size: 10px;
+    font-size: 12px;
+}
+
+.sport-desc {
+    max-width: 18vw;
 }
